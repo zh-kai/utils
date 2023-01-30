@@ -1,14 +1,27 @@
 {
-  "name": "utils",
-  "version": "1.0.0",
+  "name": "@kikikk/utils",
+  "version": "0.0.5",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.es.js",
+  "unpkg": "dist/index.min.js",
+  "jsdelivr": "dist/index.min.js",
   "scripts": {
+    "build": "rollup -c rollup.config.js --bundleConfigAsCjs",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "utils"
+  ],
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/zh-kai/utils"
+  },
+  "author": "zh-kai",
+  "license": "MIT",
   "devDependencies": {
     "rollup": "^3.10.1"
   }
